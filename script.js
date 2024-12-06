@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       //Hämtar API-nycklen som vi skulle använda oss av plus att jag fått lägga till en CORS för att de skulle fungera
       const response = await fetch(
         //await väntar på svaret från servern samt fetch skickar en HTTP-begäran till angiven URL
-        "https://cors-anywhere.herokuapp.com/https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys",
+        "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys",
         {
           method: "POST", // Detta är en POST-förfrågan som kommer att skickas (Post används för att skicka data till en server)
         }
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       //startar en try-catch-block för att hantera eventuella fel som uppstår när funktionen körs
       const response = await fetch(
         //Skickar en HTTP-begäran med fetch await pausar exekveringen tills servern svarar
-        "https://cors-anywhere.herokuapp.com/https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies",
+        "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies",
         {
           method: "GET", //En GET betyder att att vi hämtar data från servern utan att ändra något
           headers: { "x-zocom": apiKey }, //API-nyckeln skickas som header i begäran
