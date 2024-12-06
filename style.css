@@ -82,7 +82,9 @@ header p {
 .planet-system p {
   font-family: "Shadows Into Light", cursive;
 }
-
+.planet:hover {
+  cursor: pointer;
+}
 .planet-system {
   position: relative;
   display: flex;
@@ -119,6 +121,7 @@ header p {
   font-size: 45px;
   color: #ffd029;
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- MERKURIUS ----- */
@@ -146,6 +149,7 @@ header p {
   font-size: 35px;
   color: rgb(139, 139, 139);
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- VENUS ----- */
@@ -174,6 +178,7 @@ header p {
   font-size: 35px;
   color: rgb(189, 73, 0);
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- JORDEN ----- */
@@ -198,6 +203,7 @@ header p {
   font-size: 35px;
   color: rgb(30, 130, 64);
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- MARS ----- */
@@ -219,6 +225,7 @@ header p {
   font-size: 35px;
   color: rgb(247, 52, 39);
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- JUPITER ----- */
@@ -237,6 +244,7 @@ header p {
     #f2f593 100%
   );
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .jupiter p {
@@ -273,6 +281,7 @@ header p {
   font-size: 35px;
   color: rgb(58, 171, 252);
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- NEPTUNIUS ----- */
@@ -295,6 +304,7 @@ header p {
   font-size: 30px;
   color: rgb(60, 175, 210);
   text-shadow: 0 0 5px #ffffff;
+  cursor: pointer;
 }
 
 /* ----- SATURNUS ----- */
@@ -341,6 +351,7 @@ header p {
   font-size: 35px;
   color: rgb(231, 187, 159);
   text-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
 }
 
 /* ---------- INFORMATIONEN OM PLANETERNA ---------- */
@@ -447,4 +458,3 @@ p {
 .back-btn:hover {
   background: linear-gradient(59deg, #4867fb 0%, #319ea8 68%);
 }
-
