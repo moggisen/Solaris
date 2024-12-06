@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Secular One", sans-serif;
+  background-color: #000000;
+  color: white;
+  overflow: hidden;
+}
+
+/* ---------- SÖKNINGS BAR ---------- */
+.search-container {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffbdf9;
+  border-radius: 30px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 16px;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----- MEDDELANDE OM EN PLANET INTE HITTAS */
+#no-match-message {
+  display: none;
+  position: fixed;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 28px;
+  top: 30%;
+  padding: 15px 15px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.529);
+}
+
+/* ---------- HEADER TEXTEN ---------- */
+header {
+  text-align: left;
+  padding: 20px;
+}
+
+header h1 {
+  /* SOLSYSTEMET */
+  font-family: "Shadows Into Light", cursive;
+  font-size: 60px;
+  margin: -15px 5px;
+  font-weight: 100;
+}
+
+header p {
+  /* SOLARIS */
+  font-size: 30px;
+  text-align: left;
+  margin-left: 170px;
+  margin-top: -30px;
+  color: #e49ff0;
+  letter-spacing: 0.6em;
+  padding: 0;
+}
+
+/* ---------- ALLA PLANETERNA ---------- */
+
+.planet-system p {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.planet-system {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* ---------- PLANETERNA ----------  */
+
+/* ------ SOLEN ----- */
+.solen {
+  width: 1000px;
+  height: 1000px;
+  top: 40%;
+  background: radial-gradient(circle, #ffd029, #ff9600);
+  box-shadow: 0 0 50px rgba(255, 208, 41, 0.8),
+    0 0 300px rgba(255, 208, 41, 0.6), 0 0 500px rgba(255, 208, 41, 0.4);
+}
+
+.solen p {
+  font-size: 35px;
+  margin-top: 120px;
+  margin-left: 35px;
+  padding: 0;
+}
+
+.solen:hover p {
+  font-size: 45px;
+  color: #ffd029;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- MERKURIUS ----- */
+.merkurius {
+  width: 30px;
+  height: 30px;
+  top: 20%;
+  left: 45%;
+  background: radial-gradient(circle, #b0b0b0, #8a8a8a, #4f4f4f),
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(255, 255, 255, 0.1),
+      transparent 50%
+    );
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.merkurius p {
+  font-size: 25px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.merkurius:hover p {
+  font-size: 35px;
+  color: rgb(139, 139, 139);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- VENUS ----- */
+.venus {
+  width: 55px;
+  height: 55px;
+  top: 20%;
+  left: 10%;
+  background: linear-gradient(
+    24deg,
+    rgba(180, 71, 58, 1) 20%,
+    rgba(247, 133, 69, 1) 50%,
+    rgba(247, 222, 165, 1) 100%
+  );
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.venus p {
+  font-size: 25px;
+  margin-top: 45px;
+  margin-left: -50px;
+  padding: 0;
+}
+
+.venus:hover p {
+  font-size: 35px;
+  color: rgb(189, 73, 0);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- JORDEN ----- */
+.jorden {
+  width: 65px;
+  height: 65px;
+  top: 2%;
+  left: 30%;
+  background: radial-gradient(circle at 25% 35%, #3cb371, transparent 55%),
+    radial-gradient(circle at 75% 65%, #3cb371, transparent 55%),
+    radial-gradient(circle at 50% 50%, #1e90ff, #006994 70%); /* Oceanblå */
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.jorden p {
+  font-size: 25px;
+  margin-top: -10px;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.jorden:hover p {
+  font-size: 35px;
+  color: rgb(30, 130, 64);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- MARS ----- */
+.mars {
+  width: 40px;
+  height: 40px;
+  top: 30%;
+  left: 25%;
+  background: radial-gradient(circle at 30% 30%, #ff6347, transparent 50%),
+    radial-gradient(circle at 70% 70%, #b22222, transparent 50%),
+    radial-gradient(circle at 50% 50%, #ff4500, #800000 60%);
+}
+.mars p {
+  font-size: 25px;
+  margin-top: -45px;
+  padding: 0;
+}
+.mars:hover p {
+  font-size: 35px;
+  color: rgb(247, 52, 39);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- JUPITER ----- */
+.jupiter {
+  width: 188px;
+  height: 188px;
+  top: -10%;
+  left: 50%;
+  background-image: linear-gradient(
+    0deg,
+    #fb9c1a 0%,
+    #eccf85 25%,
+    #da8d0e 43%,
+    #ff9d00 65%,
+    #fdbc60 80%,
+    #f2f593 100%
+  );
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.jupiter p {
+  font-size: 25px;
+  margin-top: 60px;
+  margin-left: 195px;
+  padding: 0;
+}
+
+.jupiter:hover p {
+  font-size: 35px;
+  color: rgb(193, 138, 28);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- URANUS ----- */
+.uranus {
+  width: 75px;
+  height: 75px;
+  top: -5%;
+  left: 75%;
+  background: radial-gradient(circle, #7de2f5, #4cb9e0, #1f85ba);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.uranus p {
+  font-size: 25px;
+  margin-top: 50px;
+  margin-left: 80px;
+  padding: 0;
+}
+
+.uranus:hover p {
+  font-size: 35px;
+  color: rgb(58, 171, 252);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ----- NEPTUNIUS ----- */
+.neptunius {
+  width: 75px;
+  height: 75px;
+  top: 15%;
+  left: 90%;
+  background: radial-gradient(circle, #1e3c72, #2a5298);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.neptunius p {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: -100px;
+  padding: 0;
+}
+
+.neptunius:hover p {
+  font-size: 30px;
+  color: rgb(60, 175, 210);
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* ----- SATURNUS ----- */
+
+.saturnus {
+  width: 144px;
+  height: 144px;
+  top: 25%;
+  left: 70%;
+  background: linear-gradient(
+    180deg,
+    #f4e4c7 10%,
+    #e8d3b0 20%,
+    #f8e9d5 30%,
+    #d1b48b 40%,
+    #f7e6d3 50%,
+    #f3dfc3 60%,
+    #e2c5a1 70%,
+    #f9ecdd 80%,
+    #f4e4c7 90%
+  );
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.saturnus-ring {
+  position: absolute;
+  width: 218px;
+  height: 10px;
+  top: 50%;
+  left: 55%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.saturnus p {
+  font-size: 25px;
+  margin-top: 100px;
+  margin-left: 140px;
+  padding: 0;
+}
+
+.saturnus:hover p {
+  font-size: 35px;
+  color: rgb(231, 187, 159);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* ---------- INFORMATIONEN OM PLANETERNA ---------- */
+
+.planet-info {
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.529);
+  opacity: 0; /* Initialt osynlig */
+  transition: opacity 0.8s ease-in-out, visibility 0.15s ease-in-out;
+}
+/* gör att den visas när man kommer in på sidan efter någon sekund */
+
+.planet-info.visible {
+  visibility: visible; /*Gör den synlig */
+  opacity: 1; /* Sätt opaciteten till 100% */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-inline: 150px;
+  margin-top: 50px;
+  color: #ffffff;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.name h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: 0.09em;
+  text-align: center;
+  margin: -15px;
+  padding-top: 20px;
+}
+
+.name p {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.6em;
+  color: #4158d0;
+  margin-left: 110px;
+  margin-top: -25px;
+}
+
+.venus-description .description {
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.description {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0 150px;
+  padding-bottom: 10px;
+}
+
+.description::after {
+  content: "";
+  display: block;
+  width: 85%;
+  height: 1px;
+  background-color: #555;
+  margin: 20px auto 0 auto;
+}
+
+.temp,
+.daysAround,
+.size-distance {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 20px;
+  padding: 0 50px;
+}
+
+.back-btn {
+  position: fixed;
+  font-size: 20px;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 0.09em;
+  font-weight: 100;
+  left: 50%;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.529);
+  transform: translateX(-50%);
+}
+
+.back-btn a {
+  text-decoration: none; /* Ta bort understrykning */
+  color: #ffffff; /* Textfärg */
+}
+
+.back-btn:hover {
+  background: linear-gradient(59deg, #4867fb 0%, #319ea8 68%);
+}
+

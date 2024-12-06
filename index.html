@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solsystemet</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>SOLSYSTEMET</h1>
+      <p>SOLARIS</p>
+      <section class="search-container">
+        <form action="" class="search-bar">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Sök på en planet..."
+          />
+        </form>
+      </section>
+    </header>
+
+    <main class="planet-system">
+      <section class="planet solen" data-name="solen"><p>Solen</p></section>
+      <section class="planet merkurius" data-name="merkurius">
+        <p>Merkurius</p>
+      </section>
+      <section class="planet venus" data-name="venus"><p>Venus</p></section>
+      <section class="planet jorden" data-name="jorden"><p>Jorden</p></section>
+      <section class="planet mars" data-name="mars"><p>Mars</p></section>
+      <section class="planet jupiter" data-name="jupiter">
+        <p>Jupiter</p>
+      </section>
+      <section class="planet saturnus" data-name="saturnus">
+        <section class="saturnus-ring"></section>
+        <p>Saturnus</p>
+      </section>
+      <section class="planet uranus" data-name="uranus"><p>Uranus</p></section>
+      <section class="planet neptunius" data-name="neptunus">
+        <p>Neptunius</p>
+      </section>
+      <!-- Lägg till denna div där du vill visa meddelandet på sidan -->
+      <section id="no-match-message"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
